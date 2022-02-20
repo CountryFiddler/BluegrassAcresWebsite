@@ -1,3 +1,56 @@
+html, body, #root {
+
+}
+
+#root {
+
+}
+
+.burgerIcon {
+  color: black;
+  height: 30px;
+  width: 30px;
+}
+.navbar {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 25px;
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.navbarLink {
+  margin: 5%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.homePageImageSlider {
+  max-width: 1200px;
+  max-height: 500px;
+  margin: auto;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.homePageAboutSection {
+  max-width: 1200px;
+  margin: auto;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .App {
   text-align: center;
 }
@@ -7,6 +60,460 @@
   pointer-events: none;
 }
 
+.productCard{
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.productSelection {
+  max-width: 1200px;
+  margin: auto;
+
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer {
+  margin: auto;
+  max-width: 1500px;
+  background-color: #00004d;
+
+  position: fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.footerContainer {
+  background-color: #00004d;
+  height: 80px;
+  position: fixed;
+  margin: auto;
+  left:0;
+  bottom:0;
+  right:0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footerItems {
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.footerText {
+  color: white;
+}
+
+.socialMediaFooterIcon {
+  margin-left: 30px;
+  margin-top: 7.5%;
+}
+
+.socialMediaFooterIcons {
+  justify-content: space-between;
+}
+
+.linkText {
+  color: black;
+}
+
+.aboutPageHeader {
+  text-align: center;
+  margin-top: 2.5%;
+}
+
+.aboutPageText {
+  margin: auto;
+  width: 80%;
+  max-width: 1200px;
+  padding-bottom: 50px;
+}
+
+.displayGoats {
+  max-width: 1200px;
+  margin: auto;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.goatDisplay {
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.displayGoatsContainer {
+  justify-content: space-around;
+  border-color: black;
+  border-width: 5px;
+}
+
+.displayGoatImages{
+  margin-top: 1.5%;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.goatImageDisplay {
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.displayDescriptionAwardsContainer {
+  margin-top: 1.5%;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.descriptionAwardsContainerDisplay {
+  margin-top: 1.5%;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.displayDescriptionAwards {
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.descriptionAwardsDisplay {
+  border: 1px solid #bbb;
+  width: 200px;
+  margin-top: 1.5%;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.displayKiddingSchedule {
+  max-width: 1200px;
+  border: 1px solid #bbb;
+  justify-items: center;
+  margin: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.kiddingScheduleDisplay {
+  border: 1px solid #bbb;
+  width: 200px;
+  margin-top: 1.5%;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.noGoatsForSaleText {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.kiddingDateText {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.farmersMarketText {
+  font-style: italic;
+}
+
+/* Navbar container */
+
+
+
+
+/* The dropdown container */
+
+/* Dropdown button */
+.dropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: grid;
+  position: absolute;
+}
+
+
+
+.mobileDropdownBtn {
+  border: none;
+  background-color: white;
+}
+
+/* Dropdown button */
+.goatDropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.goatDropdownContent {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.goatDropdownContent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.goatDropdownContent a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.goatDropdown:hover .goatDropdownContent {
+  display: grid;
+  position: absolute;
+}
+@media (min-width: 1000px) {
+  .navbar {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    justify-items: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 25px;
+    border-radius: 1%;
+    overflow: hidden;
+  }
+  /* The dropdown container */
+  .dropdown {
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: grid;
+    position: absolute;
+  }
+}
+
+/* The dropdown container */
+.mobileDropdown {
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.mobileDropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.mobileDropdownContent {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.mobileDropdownContent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.mobileDropdownContent a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.mobileDropdown:hover .mobileDropdownContent {
+  display: grid;
+  position: absolute;
+}
+
+.ourHerdDropdown {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.ourHerdDropdownContent {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.ourHerdDropdownContent a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.ourHerdDropdownContent a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.ourHerdDropdown:hover .ourHerdDropdownContent {
+  display: grid;
+  position: relative;
+
+}
+
+.filler {
+  height: 200px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
