@@ -58,7 +58,7 @@ const KiddingSchedule = () => {
         console.log(pairings[0]),
         <div>
             <div className={'aboutPageHeader'}>
-                <h2>Kidding Schedule</h2>
+                <h2 className={'westonFont'}>Kidding Schedule</h2>
             </div>
             <div >
                 <div >
@@ -66,11 +66,11 @@ const KiddingSchedule = () => {
                         console.log(pairing.doe.name),
                             <div className='displayKiddingSchedule'>
                             <div className={'goatDisplay'} >
-                                <p className={'aboutPageHeader'}>{pairing.doe.name}</p>
+                                <p className={'westonFont'}>{pairing.doe.name}</p>
                                 <img src={pairing.doe.img} width={200} height={200}></img>
                             </div>
                         <div className={'goatDisplay'}>
-                        <p className={'aboutPageHeader'}>{pairing.buck.name}</p>
+                        <p className={'westonFont'}>{pairing.buck.name}</p>
                         <img src={pairing.buck.img} width={200} height={200}></img>
                         </div>
                                 <div className={'goatDisplay'}>

@@ -34,13 +34,13 @@ const Bucks = () => {
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h2>Sr. Bucks</h2>
+                <h2 className={'westonFont'}>Sr. Bucks</h2>
             </div>
             <div className={'displayGoatsContainer'}>
                 <DisplayGoats goats={srBucks}/>
             </div>
             <div className={'aboutPageHeader'}>
-                <h2>Jr. Bucks</h2>
+                <h2 className={'westonFont'}>Jr. Bucks</h2>
             </div>
             <div className={'displayGoatsContainer'}>
                 <DisplayGoats goats={jrBucks}/>

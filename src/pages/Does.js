@@ -45,7 +45,7 @@ const Does = () => {
                 <DisplayGoats goats={does}/>
             </div>
             <div className={'aboutPageHeader'}>
-                <h2>Jr. Does</h2>
+                <h2 className={'westonFont'}>Jr. Does</h2>
                 <p>We currently do not have any junior does at this point. </p>
             </div>
             <Footer/>

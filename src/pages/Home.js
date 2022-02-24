@@ -32,7 +32,7 @@ const Home = () => {
             </div>
             <div className={'homePageAboutSection'}>
                 <div className={'homePageAboutSectionContainer'}>
-                <h2>About The Farm</h2>
+                <h2 className={'westonFont'}>About The Farm</h2>
                 </div>
                 <div className={'homePageAboutSectionContainer'}>
                 <p>We are a small family farm located on the beautiful Olympic Peninsula in Sequim WA.</p>

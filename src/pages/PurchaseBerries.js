@@ -12,7 +12,7 @@ const PurchaseBerries = () =>{
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>Purchase Our Berries</h1>
+                <h1 className={'westonFont'}>Purchase Our Berries</h1>
             </div>
             <div className={'aboutPageHeader'}>
                 <p> Our berries are for sale at our farm or the farmer's markets listed below:  </p>

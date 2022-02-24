@@ -13,7 +13,7 @@ const AboutGoats = () =>{
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>About Our Goats</h1>
+                <h1 className={'westonFont'}>About Our Goats</h1>
             </div>
             <div className={'aboutPageText'}>
                 <p> Here at Bluegrass Acres we raise Mini-Alpines and purebred Nigerian Dwarf goats. Mini-Alpines are a cross between the Alpine and Nigerian-Dwarf dairy goats. </p>

@@ -12,7 +12,7 @@ const Berries = () =>{
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>About Our Berries</h1>
+                <h1 className={'westonFont'}>About Our Berries</h1>
             </div>
             <div className={'aboutPageText'}>
                 <p> Summer time is full of good weather, fun times, and here at Bluegrass Acres, many pounds of strawberries and blueberries.  </p>

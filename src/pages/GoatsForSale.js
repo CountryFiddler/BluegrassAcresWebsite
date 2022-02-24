@@ -14,7 +14,7 @@ const GoatsForSale = () => {
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h2>For Sale</h2>
+                <h2 className={'westonFont'}>For Sale</h2>
             </div>
             <div className={'noGoatsForSaleText'}>
                 <p>We currently do not have any goats for sale at this point. We have kids for sale every spring

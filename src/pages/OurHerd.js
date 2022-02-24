@@ -28,7 +28,7 @@ const OurHerd = () => {
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>Our Herd</h1>
+                <h1 className={'westonFont'}>Our Herd</h1>
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Does.js'>

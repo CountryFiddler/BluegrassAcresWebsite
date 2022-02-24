@@ -17,7 +17,7 @@ const DisplayGoats = (props) => {
                     <Link key={i} className= 'goatDisplay' to={{pathname: goat.pageLink}} state={{
                             goat}}
                      >
-                        <p className={'aboutPageHeader'}>{goat.name}</p>
+                        <p className={'westonFont'}>{goat.name}</p>
                         <img src={goat.img} width={200} height={200}></img>
                         <p className={'linkText'}>More Info</p></Link>
                 ))}

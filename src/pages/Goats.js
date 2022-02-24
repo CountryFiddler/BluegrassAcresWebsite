@@ -10,7 +10,7 @@ const Goats = () =>{
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>Mini-Alpine and Nigerian Dwarf Dairy Goats</h1>
+                <h1 className={'westonFont'}>Mini-Alpine and Nigerian Dwarf Dairy Goats</h1>
             </div>
     <div className='productSelection'>
         <Link className= 'productCard' to='/pages/OurHerd.js'>

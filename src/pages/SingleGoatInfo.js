@@ -16,7 +16,7 @@ function SingleGoatInfo () {
     return (
         <div>
             <div className={'aboutPageHeader'}>
-                <h1>{goat.name}</h1>
+                <h1 className={'westonFont'}>{goat.name}</h1>
             </div>
             <div className='displayGoatImages'>
             <img className={'goatImageDisplay'} src={goat.img} width={200} height={200}></img>
