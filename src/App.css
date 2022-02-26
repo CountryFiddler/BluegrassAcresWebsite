@@ -26,11 +26,13 @@ html, body, #root {
 
 .navbarLink {
   margin: 5%;
+
   color: black;
   text-decoration: none;
   font-weight: bold;
   font-family: "Weston Free";
 }
+
 
 .homePageImageSlider {
   max-width: 1200px;
@@ -43,13 +45,17 @@ html, body, #root {
 }
 
 .homePageAboutSection {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
   justify-items: center;
   display: grid;
   grid-gap: 20px;
   padding: 50px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.homePageAboutSectionText {
+  max-width: 500px;
 }
 
 .App {
@@ -64,9 +70,12 @@ html, body, #root {
 .productCard{
   text-align: center;
   align-items: center;
-  border-radius: 4px;
-  border: 1px solid #bbb;
   transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.photos {
+  border-radius: 25px;
 }
 
 .productSelection {
@@ -114,6 +123,7 @@ html, body, #root {
 }
 .footerText {
   color: white;
+  font-family: "Weston Free";
 }
 
 .socialMediaFooterIcon {
@@ -127,7 +137,45 @@ html, body, #root {
 
 .linkText {
   color: black;
-  font-family: "Weston Free"
+  font-family: "Weston Free";
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkText:hover {
+  color: black;
+  font-family: "Weston Free";
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #ddd;
+  border-radius: 25px;
+
+}
+
+.goatsForSaleLink {
+  text-align: center;
+  text-decoration: none;
+}
+
+.goatsForSaleLinkText {
+  text-align: center;
+  max-width: 200px;
+  color: black;
+  font-family: "Weston Free";
+  text-decoration: none;
+  margin: auto;
+  justify-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.goatsForSaleLinkText:hover {
+  text-align: center;
+  color: black;
+  font-family: "Weston Free";
+  text-decoration: none;
+  background-color: #ddd;
+  border-radius: 10px;
 }
 
 .aboutPageHeader {
@@ -141,6 +189,8 @@ html, body, #root {
   width: 80%;
   max-width: 1200px;
   padding-bottom: 50px;
+  font-family: Serif;
+  font-size: large;
 }
 
 .displayGoats {
@@ -157,8 +207,12 @@ html, body, #root {
   text-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  /*border: 1px solid #bbb;*/
   transition: all 0.3s linear;
+  font-family: Serif;
+  font-size: large;
+  text-decoration: none;
+  color: black;
 }
 
 .displayGoatsContainer {
@@ -184,7 +238,9 @@ html, body, #root {
 }
 
 .displayDescriptionAwardsContainer {
-  margin-top: 1.5%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
   justify-items: center;
   display: grid;
   grid-gap: 20px;
@@ -193,14 +249,19 @@ html, body, #root {
 
 .descriptionAwardsContainerDisplay {
   margin-top: 1.5%;
+  /*border: 1px solid #bbb;*/
   justify-items: center;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   font-family: "Weston Free";
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .displayDescriptionAwards {
+  max-width: 1200px;
+  margin: auto;
   justify-items: center;
   display: grid;
   grid-gap: 20px;
@@ -208,18 +269,22 @@ html, body, #root {
 }
 
 .descriptionAwardsDisplay {
-  border: 1px solid #bbb;
-  width: 200px;
-  margin-top: 1.5%;
+  /*border: 1px solid #bbb;*/
+  max-width: 500px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
   justify-items: center;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  font-family: Serif;
+  font-size: large;
 }
 
 .displayKiddingSchedule {
   max-width: 1200px;
-  border: 1px solid #bbb;
+  /*border: 1px solid #bbb;*/
   justify-items: center;
   margin: auto;
   display: grid;
@@ -228,7 +293,7 @@ html, body, #root {
 }
 
 .kiddingScheduleDisplay {
-  border: 1px solid #bbb;
+  /*border: 1px solid #bbb;*/
   width: 200px;
   margin-top: 1.5%;
   justify-items: center;
@@ -240,15 +305,78 @@ html, body, #root {
   text-align: center;
   width: 70%;
   margin: auto;
+  font-family: Serif;
+  font-size: large;
 }
 
-.kiddingDateText {
+.kiddingPageTextDisplay {
   text-align: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-radius: 4px;
+  /*border: 1px solid #bbb;*/
+  transition: all 0.3s linear;
+  font-family: Serif;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+.kiddingPageText {
+  text-align: center;
+  align-items: center;
   width: 70%;
   margin: auto;
+
+  text-decoration: none;
+  color: black;
 }
+
+.reserveKidTextDisplay {
+  text-align: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-radius: 4px;
+  /*border: 1px solid #bbb;*/
+  transition: all 0.3s linear;
+  font-family: Serif;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+.reserveKidText{
+  text-align: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.reserveKidText:hover {
+  text-align: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  background-color: #ddd;
+  border-radius: 25px;
+}
+
 .farmersMarketText {
   font-style: italic;
+  font-size: large;
+  font-family: Serif;
+}
+
+.purchaseBerriesText {
+  font-size: large;
+  font-family: Serif;
 }
 
 /* Navbar container */
@@ -353,7 +481,12 @@ html, body, #root {
   display: grid;
   position: absolute;
 }
-@media (min-width: 1000px) {
+
+.serifFont {
+  font-size: large;
+  font-family: Serif;
+}
+
   .navbar {
     text-align: center;
     max-width: 1200px;
@@ -383,9 +516,10 @@ html, body, #root {
     margin: 0; /* Important for vertical align on mobile phones */
   }
 
-  /* Add a red background color to navbar links on hover */
+
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
+    border-radius: 10px;
   }
 
   /* Dropdown content (hidden by default) */
@@ -417,7 +551,7 @@ html, body, #root {
     display: grid;
     position: absolute;
   }
-}
+
 
 /* The dropdown container */
 .mobileDropdown {
@@ -518,6 +652,12 @@ html, body, #root {
 .westonFont {
   font-family: "Weston Free";
 }
+
+.westonFontBold {
+  font-family: "Weston Free";
+  font-weight: bold;
+}
+
 
 .filler {
   height: 200px;

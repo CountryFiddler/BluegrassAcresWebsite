@@ -34,20 +34,20 @@ const Home = () => {
                 <div className={'homePageAboutSectionContainer'}>
                 <h2 className={'westonFont'}>About The Farm</h2>
                 </div>
-                <div className={'homePageAboutSectionContainer'}>
-                <p>We are a small family farm located on the beautiful Olympic Peninsula in Sequim WA.</p>
+                <div className={'homePageAboutSectionText'}>
+                <p className={'serifFont'}>We are a small family farm located on the beautiful Olympic Peninsula in Sequim WA.</p>
                 </div>
             </div>
                     <div className='productSelection'>
                         <Link className= 'productCard' to='pages/About.js'>
-                            <img src={sapphirePhoto} width={200} height={200}></img>
+                            <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
                             <p className={'linkText'}>About our Farm</p></Link>
-                        <Link className= 'productCard' to='pages/Berries.js'>
-                        <img src={strawberryHomePhoto} width={200} height={200}></img>
-                        <p className={'linkText'}>Place a berry order</p>
+                        <Link className= 'productCard' to='pages/PurchaseBerries.js'>
+                        <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
+                        <p className={'linkText'}>Purchase Berries</p>
                         </Link>
                         <Link className= 'productCard' to='pages/Goats.js'>
-                            <img src={cappuccinoPhoto} width={200} height={200}></img>
+                            <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                             <p className={'linkText'}>Reserve Your New Goat Today</p>
                         </Link>
             </div>

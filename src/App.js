@@ -116,9 +116,13 @@ const App = () => {
               <Route path="pages/Bucks.js"  element={<Bucks/>}/>
               <Route path="pages/Does.js/pages/SingleGoatInfo"  element={<SingleGoatInfo/>}/>
               <Route path="pages/Bucks.js/pages/SingleGoatInfo"  element={<SingleGoatInfo/>}/>
+              <Route path="pages/Does.js/pages/SingleGoatInfo/pages/GoatsForSale.js"  element={<GoatsForSale/>}/>
+              <Route path="pages/Bucks.js/pages/SingleGoatInfo/pages/GoatsForSale.js"  element={<GoatsForSale/>}/>
+              <Route path="pages/AboutGoats.js/pages/GoatsForSale.js"  element={<GoatsForSale/>}/>
               <Route path="pages/GoatsForSale.js"  element={<GoatsForSale/>}/>
               <Route path="pages/OurHerd.js/GoatsForSale.js"  element={<GoatsForSale/>}/>
               <Route path="pages/KiddingSchedule.js"  element={<KiddingSchedule/>}/>
+              <Route path="pages/KiddingSchedule.js/pages/ForSale.js"  element={<GoatsForSale/>}/>
               <Route path="pages/PurchaseBerries.js"  element={<PurchaseBerries/>}/>
 
           </Routes>

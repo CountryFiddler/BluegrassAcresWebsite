@@ -67,18 +67,18 @@ const KiddingSchedule = () => {
                             <div className='displayKiddingSchedule'>
                             <div className={'goatDisplay'} >
                                 <p className={'westonFont'}>{pairing.doe.name}</p>
-                                <img src={pairing.doe.img} width={200} height={200}></img>
+                                <img className={'photos'} src={pairing.doe.img} width={200} height={200}></img>
                             </div>
                         <div className={'goatDisplay'}>
                         <p className={'westonFont'}>{pairing.buck.name}</p>
-                        <img src={pairing.buck.img} width={200} height={200}></img>
+                        <img className={'photos'} src={pairing.buck.img} width={200} height={200}></img>
                         </div>
-                                <div className={'goatDisplay'}>
-                                    <p className={'kiddingDateText'}>{pairing.doe.name} is due to kid
+                                <div className={'kiddingPageTextDisplay'}>
+                                    <p className={'kiddingPageText'}>{pairing.doe.name} is due to kid
                                         {pairing.kiddingDate}</p>
                                 </div>
-                                <div className={'goatDisplay'}>
-                                    <p className={'aboutPageHeader'}>Reserve your new kid today!</p>
+                                <div className={'reserveKidTextDisplay'}>
+                                    <Link className={'reserveKidText'} to='pages/ForSale.js'>Reserve your new kid today!</Link>
                                 </div>
                             </div>
                     ))}

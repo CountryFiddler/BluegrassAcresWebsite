@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import cappucinoSliderPhoto from '../images/cappucinosliderphoto.jpeg';
 import sheepPhoto from '../images/sheepphoto.jpeg';
 import pigPhoto from '../images/pigphoto.jpeg';
+import photos from '../App.css';
 
 
 const images = [

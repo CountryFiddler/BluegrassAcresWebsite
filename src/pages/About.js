@@ -17,10 +17,10 @@ const About = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Berries.js'>
-                    <img src={strawberryHomePhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
                     <p className={'linkText'}>About Our Berries</p></Link>
                 <Link className= 'productCard' to='/pages/AboutGoats.js'>
-                    <img src={cappuccinoPhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                     <p className={'linkText'}>About Our Goats</p></Link>
             </div>
             <Footer/>

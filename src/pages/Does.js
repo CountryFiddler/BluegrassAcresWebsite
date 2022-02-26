@@ -39,7 +39,8 @@ const Does = () => {
     return (
         <div>
                 <div className={'aboutPageHeader'}>
-                    <h2>Sr. Does</h2>
+                    <h2 className={'westonFont'
+                    }>Sr. Does</h2>
                 </div>
             <div >
                 <DisplayGoats goats={does}/>

@@ -27,11 +27,11 @@ const AboutGoats = () =>{
                 <p> Our herd is tested yearly for CAE, CL, and Johnes. All goats were negative for CAE, CL, and Johnes as of 11-10-2020. </p>
             </div>
             <div className='productSelection'>
-                <Link className= 'productCard' to='/pages/About.js'>
-                    <img src={sapphirePhoto} width={200} height={200}></img>
+                <Link className= 'productCard' to='/pages/OurHerd.js'>
+                    <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
                     <p className={'linkText'}>Our Herd</p></Link>
-                <Link className= 'productCard' to='pages/Goats.js'>
-                    <img src={cappuccinoPhoto} width={200} height={200}></img>
+                <Link className= 'productCard' to='pages/GoatsForSale.js'>
+                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                     <p className={'linkText'}>For Sale</p>
                 </Link>
             </div>

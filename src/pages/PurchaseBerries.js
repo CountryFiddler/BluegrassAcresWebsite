@@ -15,7 +15,7 @@ const PurchaseBerries = () =>{
                 <h1 className={'westonFont'}>Purchase Our Berries</h1>
             </div>
             <div className={'aboutPageHeader'}>
-                <p> Our berries are for sale at our farm or the farmer's markets listed below:  </p>
+                <p className={'purchaseBerriesText'}> Our berries are for sale at our farm or the farmer's markets listed below:  </p>
 
                 <p className={'farmersMarketText'}> Sequim Farmer's Market </p>
 
@@ -24,7 +24,7 @@ const PurchaseBerries = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Berries.js'>
-                    <img src={strawberryHomePhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
                     <p className={'linkText'}>About Our Berries</p></Link>
             </div>
             <Footer/>

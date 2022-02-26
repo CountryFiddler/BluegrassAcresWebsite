@@ -14,18 +14,18 @@ const Goats = () =>{
             </div>
     <div className='productSelection'>
         <Link className= 'productCard' to='/pages/OurHerd.js'>
-            <img src={sapphirePhoto} width={200} height={200}></img>
+            <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
             <p className={'linkText'}>Our Herd</p></Link>
         <Link className= 'productCard' to={'/pages/AboutGoats.js'}>
-            <img src={sapphirePhoto} width={200} height={200}></img>
+            <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
             <p className={'linkText'}>About Our Goats</p>
         </Link>
         <Link className= 'productCard' to='/pages/GoatsForSale.js'>
-            <img src={cappuccinoPhoto} width={200} height={200}></img>
+            <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
             <p className={'linkText'}>For Sale</p>
         </Link>
             <Link className= 'productCard' to='/pages/KiddingSchedule.js'>
-                <img src={cappuccinoPhoto} width={200} height={200}></img>
+                <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                 <p className={'linkText'}>2022 Kidding Schedule</p></Link>
 
 

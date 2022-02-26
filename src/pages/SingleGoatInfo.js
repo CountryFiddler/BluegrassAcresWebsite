@@ -19,7 +19,7 @@ function SingleGoatInfo () {
                 <h1 className={'westonFont'}>{goat.name}</h1>
             </div>
             <div className='displayGoatImages'>
-            <img className={'goatImageDisplay'} src={goat.img} width={200} height={200}></img>
+            <img className={'photos'} src={goat.img} width={200} height={200}></img>
             </div>
             <div className='displayDescriptionAwardsContainer'>
                 <h3 className={'descriptionAwardsContainerDisplay'}>Description</h3>
@@ -30,8 +30,8 @@ function SingleGoatInfo () {
                 <p className={'descriptionAwardsDisplay'}>{goat.awards}</p>
             </div>
             <p className={'goatDisplay'}>If interested in a kid from {goat.name}, please check our for sale page</p>
-            <Link className= 'productCard' to='pages/Goats.js'>
-                <p className={'linkText'}>For Sale</p>
+            <Link className={'goatsForSaleLink'} to='pages/GoatsForSale.js'>
+                <p className={'goatsForSaleLinkText'}>For Sale Page</p>
             </Link>
             <Footer/>
         </div>

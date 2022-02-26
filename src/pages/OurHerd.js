@@ -32,14 +32,14 @@ const OurHerd = () => {
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Does.js'>
-                    <img src={sapphirePhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
                     <p className={'linkText'}>Does</p></Link>
                 <Link className= 'productCard' to='/pages/Bucks.js'>
-                    <img src={cappuccinoPhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                     <p className={'linkText'}>Bucks</p>
                 </Link>
                 <Link className= 'productCard' to='/pages/OurHerd.js/GoatsForSale.js'>
-                    <img src={cappuccinoPhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
                     <p className={'linkText'}>For Sale</p>
                 </Link>
             </div>

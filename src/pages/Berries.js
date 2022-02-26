@@ -25,7 +25,7 @@ const Berries = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/PurchaseBerries.js'>
-                    <img src={strawberryHomePhoto} width={200} height={200}></img>
+                    <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
                     <p className={'linkText'}>Purchase Berries</p></Link>
             </div>
             <Footer/>
