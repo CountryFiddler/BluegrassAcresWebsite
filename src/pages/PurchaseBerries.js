@@ -1,12 +1,7 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import sapphirePhoto from "../images/sapphirephoto.jpeg";
-import strawberryHomePhoto from "../images/strawberryhomephoto.jpeg";
-import cappuccinoPhoto from "../images/cappuccinophoto.jpeg";
+import {Link} from "react-router-dom";
+import strawberryHomePhoto from "../images/strawberryhomephoto.png";
 import Footer from "../components/footer";
-import Home from "./Home";
-import About from "./About";
-import Goats from "./Goats";
 const PurchaseBerries = () =>{
     console.log("On the About Berries Page");
     return (
@@ -24,8 +19,8 @@ const PurchaseBerries = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Berries.js'>
-                    <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>About Our Berries</p></Link>
+                    <img className={'linkPhotos swingTop'} src={strawberryHomePhoto} width={200} height={200}></img>
+                    <p className={'linkText swingTop'}>About Our Berries</p></Link>
             </div>
             <Footer/>
         </div>

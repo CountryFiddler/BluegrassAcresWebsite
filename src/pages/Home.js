@@ -1,16 +1,15 @@
 import React from 'react';
 import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import About from "./About";
+import {Link} from "react-router-dom";
 import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
 import sapphirePhoto from '../images/sapphirephoto.jpeg'
-import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
-import Berries from "./Berries";
-import Goats from "./Goats";
+import strawberryHomePhoto from '../images/strawberryhomephoto.png'
+import milkshakephoto from '../images/milkshakephoto.jpeg'
+import aboutFarmPhoto from '../images/aboutourfarmphoto.jpeg'
 import Footer from "../components/footer";
+import logo from '../images/logo.png';
 const Home = () => {
 
-    // Try using this later
     const images =[
         {
          name: sapphirePhoto,
@@ -31,24 +30,27 @@ const Home = () => {
             <ImageSlider/>
             </div>
             <div className={'homePageAboutSection'}>
-                <div className={'homePageAboutSectionContainer'}>
-                <h2 className={'westonFont'}>About The Farm</h2>
-                </div>
+
+                    <img src={logo} width={250} height={250}/>
                 <div className={'homePageAboutSectionText'}>
-                <p className={'serifFont'}>We are a small family farm located on the beautiful Olympic Peninsula in Sequim WA.</p>
+                <h1 className={'homePageAboutSectionTextHeader'}>About The Farm</h1>
+                <p className={'serifFont'}>Bluegrass Acres is a small family farm located on the beautiful Olympic Peninsula in Sequim WA. We
+                grow the sweetest tasting strawberries and blueberries and raise Mini-Alpine and Nigerian Dwarf goats dairy goats. Our mission
+                is to provide you with the healthiest and best tasting produce while sharing with you the beauty and joys of agriculture.</p>
                 </div>
+
             </div>
                     <div className='productSelection'>
                         <Link className= 'productCard' to='pages/About.js'>
-                            <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
-                            <p className={'linkText'}>About our Farm</p></Link>
+                            <img className={'linkPhotos slideLeft'} src={aboutFarmPhoto} width={200} height={200}></img>
+                            <p className={'linkText slideLeft'}>About our Farm</p></Link>
                         <Link className= 'productCard' to='pages/PurchaseBerries.js'>
-                        <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
-                        <p className={'linkText'}>Purchase Berries</p>
+                        <img className={'linkPhotos slideBottom'} src={strawberryHomePhoto} width={200} height={200}></img>
+                        <p className={'linkText slideBottom'}>Purchase Berries</p>
                         </Link>
                         <Link className= 'productCard' to='pages/Goats.js'>
-                            <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
-                            <p className={'linkText'}>Reserve Your New Goat Today</p>
+                            <img className={'linkPhotos slideRight'} src={milkshakephoto} width={200} height={200}></img>
+                            <p className={'linkText slideRight'}>Reserve Your New Goat Today</p>
                         </Link>
             </div>
             <div className={'filler'}></div>

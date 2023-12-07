@@ -1,14 +1,9 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import About from "./About";
-import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
-import sapphirePhoto from '../images/sapphirephoto.jpeg'
-import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
-import Berries from "./Berries";
-import Goats from "./Goats";
+import {Link} from "react-router-dom";
+import sapphirePhoto from '../images/mainsapphirephoto.jpeg'
+import shastaPhoto from '../images/shastaphoto.jpeg'
+import toffeePhoto from '../images/toffeephoto.jpeg'
 import Footer from "../components/footer";
-import DisplayGoats from "../components/DisplayGoats";
 const KiddingSchedule = () => {
 
     const does =[
@@ -17,7 +12,7 @@ const KiddingSchedule = () => {
             description: 'Toffee is a 2nd generation Mini-Alpine doe, with a friendly personality. She' +
                 'has performed very well in the show ring and milk stand. ',
             awards: 'None',
-            img: sapphirePhoto,
+            img: toffeePhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
         {
@@ -32,16 +27,15 @@ const KiddingSchedule = () => {
     const bucks =[
         {
             name: "Shasta",
-            img:cappuccinoPhoto,
+            img:shastaPhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
         {
             name: "Shasta",
-            img:cappuccinoPhoto,
+            img:shastaPhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
     ]
-    // Try using this later
     const pairings =[
         {
             doe: does[1],
@@ -67,11 +61,11 @@ const KiddingSchedule = () => {
                             <div className='displayKiddingSchedule'>
                             <div className={'goatDisplay'} >
                                 <p className={'westonFont'}>{pairing.doe.name}</p>
-                                <img className={'photos'} src={pairing.doe.img} width={200} height={200}></img>
+                                <img className={'nonLinkPhotos scaleCenter'} src={pairing.doe.img} width={200} height={200}></img>
                             </div>
                         <div className={'goatDisplay'}>
                         <p className={'westonFont'}>{pairing.buck.name}</p>
-                        <img className={'photos'} src={pairing.buck.img} width={200} height={200}></img>
+                        <img className={'nonLinkPhotos scaleCenter'} src={pairing.buck.img} width={200} height={200}></img>
                         </div>
                                 <div className={'kiddingPageTextDisplay'}>
                                     <p className={'kiddingPageText'}>{pairing.doe.name} is due to kid

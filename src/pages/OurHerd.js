@@ -1,16 +1,12 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import About from "./About";
+import {Link} from "react-router-dom";
 import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
 import sapphirePhoto from '../images/sapphirephoto.jpeg'
 import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
-import Berries from "./Berries";
-import Goats from "./Goats";
+import milkshakePhoto from '../images/milkshakephoto.jpeg'
 import Footer from "../components/footer";
 const OurHerd = () => {
 
-    // Try using this later
     const images =[
         {
             name: sapphirePhoto,
@@ -32,15 +28,15 @@ const OurHerd = () => {
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Does.js'>
-                    <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>Does</p></Link>
+                    <img className={'linkPhotos swingLeft'} src={sapphirePhoto} width={200} height={200}></img>
+                    <p className={'linkText swingLeft'}>Does</p></Link>
                 <Link className= 'productCard' to='/pages/Bucks.js'>
-                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>Bucks</p>
+                    <img className={'linkPhotos swingTop'} src={cappuccinoPhoto} width={200} height={200}></img>
+                    <p className={'linkText swingTop'}>Bucks</p>
                 </Link>
                 <Link className= 'productCard' to='/pages/OurHerd.js/GoatsForSale.js'>
-                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>For Sale</p>
+                    <img className={'linkPhotos swingRight'} src={milkshakePhoto} width={200} height={200}></img>
+                    <p className={'linkText swingRight'}>For Sale</p>
                 </Link>
             </div>
             <Footer/>

@@ -1,11 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import sapphirePhoto from "../images/sapphirephoto.jpeg";
-import strawberryHomePhoto from "../images/strawberryhomephoto.jpeg";
+import {Link} from "react-router-dom";
+import strawberryHomePhoto from "../images/strawberryhomephoto.png";
 import cappuccinoPhoto from "../images/cappuccinophoto.jpeg";
 import Footer from "../components/footer";
-import Home from "./Home";
-import Goats from "./Goats";
 const About = () =>{
     return (
         <div>
@@ -17,11 +14,11 @@ const About = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/Berries.js'>
-                    <img className={'photos'} src={strawberryHomePhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>About Our Berries</p></Link>
+                    <img className={'linkPhotos slideLeft'} src={strawberryHomePhoto} width={200} height={200}></img>
+                    <p className={'linkText slideLeft'}>About Our Berries</p></Link>
                 <Link className= 'productCard' to='/pages/AboutGoats.js'>
-                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>About Our Goats</p></Link>
+                    <img className={'linkPhotos slideRight'} src={cappuccinoPhoto} width={200} height={200}></img>
+                    <p className={'linkText slideRight'}>About Our Goats</p></Link>
             </div>
             <Footer/>
         </div>

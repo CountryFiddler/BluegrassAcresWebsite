@@ -1,14 +1,5 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import About from "./About";
-import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
-import sapphirePhoto from '../images/sapphirephoto.jpeg'
-import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
-import Berries from "./Berries";
-import Goats from "./Goats";
 import Footer from "../components/footer";
-import DisplayGoats from "../components/DisplayGoats";
 const GoatsForSale = () => {
 
     return (

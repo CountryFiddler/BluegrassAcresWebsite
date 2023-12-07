@@ -1,13 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import sapphirePhoto from "../images/sapphirephoto.jpeg";
-import strawberryHomePhoto from "../images/strawberryhomephoto.jpeg";
-import cappuccinoPhoto from "../images/cappuccinophoto.jpeg";
+import {Link} from "react-router-dom";
+import milkshakePhoto from '../images/milkshakephoto.jpeg'
+import ourHerdPhoto from '../images/ourherdphoto.jpeg'
 import Footer from "../components/footer";
-import Home from "./Home";
-import About from "./About";
-import Berries from "./Berries";
-import Goats from "./Goats";
 const AboutGoats = () =>{
     console.log("On the About Goats Page");
     return (
@@ -28,13 +23,14 @@ const AboutGoats = () =>{
             </div>
             <div className='productSelection'>
                 <Link className= 'productCard' to='/pages/OurHerd.js'>
-                    <img className={'photos'} src={sapphirePhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>Our Herd</p></Link>
+                    <img className={'linkPhotos swingLeft'} src={ourHerdPhoto} width={200} height={200}></img>
+                    <p className={'linkText swingLeft'}>Our Herd</p></Link>
                 <Link className= 'productCard' to='pages/GoatsForSale.js'>
-                    <img className={'photos'} src={cappuccinoPhoto} width={200} height={200}></img>
-                    <p className={'linkText'}>For Sale</p>
+                    <img className={'linkPhotos swingRight'} src={milkshakePhoto} width={200} height={200}></img>
+                    <p className={'linkText swingRight'}>For Sale</p>
                 </Link>
             </div>
+            <div className={'filler'}/>
             <Footer/>
         </div>
     );

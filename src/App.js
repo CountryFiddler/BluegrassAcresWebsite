@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router, Route, Routes, Switch, Link} from "react-router-dom";
-import navbar from "./components/navbar"
+import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Berries from "./pages/Berries"
@@ -17,6 +15,7 @@ import Bucks from "./pages/Bucks";
 import PurchaseBerries from "./pages/PurchaseBerries"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
+import logo from './images/logo.png';
 
 
 const App = () => {
@@ -48,6 +47,9 @@ const App = () => {
       <Router>
           {checkWidth(window.innerWidth) >= 940 ? (
             <div className='navbar'>
+                <Link  to='/'>
+                    <img src={logo} width={150} height={150}/>
+                </Link>
                 <Link className= 'navbarLink' to='/'>Home</Link>
                 <Link className= 'navbarLink' to='pages/About.js'>About</Link>
                 <div className={'dropdown'}>
@@ -74,10 +76,16 @@ const App = () => {
                 </div>
             </div>
         ) : (
+            <div>
           <div className='dropdown'>
               <button onClick={displayDropdownFunction} className={'mobileDropdownBtn'}>
               <FontAwesomeIcon icon={faBars} className={'burgerIcon'}/>
               </button>
+              <div className={'mobileNavbarLogo'}>
+                  <Link  to='/'>
+                      <img src={logo} width={100} height={100}/>
+                  </Link>
+              </div>
               {displayDropdown ? (
                   console.log('Bob' + displayDropdown),
               <div className={'dropdown-content'}>
@@ -101,7 +109,9 @@ const App = () => {
               </div>
           </div>
               ) : null }
+
           </div>
+            </div>
       )}
 
           <Routes>
@@ -127,22 +137,6 @@ const App = () => {
 
           </Routes>
       </Router>
-    /*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
 
   );
 }

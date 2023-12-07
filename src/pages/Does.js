@@ -1,37 +1,33 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import About from "./About";
-import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
-import sapphirePhoto from '../images/sapphirephoto.jpeg'
-import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
-import Berries from "./Berries";
-import Goats from "./Goats";
+import sapphirePhoto from '../images/mainsapphirephoto.jpeg'
+import toffeePhoto from '../images/toffeephoto.jpeg'
+import milkshakePhoto from '../images/milkshakephoto.jpeg'
 import Footer from "../components/footer";
 import DisplayGoats from "../components/DisplayGoats";
 const Does = () => {
 
-    // Try using this later
+
     const does =[
         {
             name: "Toffee",
             description: 'Toffee is a 2nd generation Mini-Alpine doe, with a friendly personality. She' +
-                'has performed very well in the show ring and milk stand. ',
+                'will be a first freshener in Spring 2022',
             awards: 'None',
-            img: sapphirePhoto,
+            img: toffeePhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
         {
             name: "Milkshake",
-            description: 'Milkshake is a 1st generation Mini-Alpine doe',
+            description: 'Milkshake is a 1st generation Mini-Alpine doe with a friendly personality. She will be a first freshener in Spring 2023',
             awards: 'None',
-            img: sapphirePhoto,
+            img: milkshakePhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
         {
             name: "Sapphire",
-            description: 'Sapphire is a 4th generation Mini-Alpine doe',
-            awards: 'None',
+            description: 'Sapphire is a 4th generation Mini-Alpine doe. She has a friendly personality and loves to be pet.' +
+            'She has done very well in the show ring and milk stand',
+            awards: '2020 Spring MDGA V-Show Grand Champion AOM Jr. Doe',
             img: sapphirePhoto,
             pageLink: 'pages/SingleGoatInfo'
         },
@@ -49,6 +45,7 @@ const Does = () => {
                 <h2 className={'westonFont'}>Jr. Does</h2>
                 <p>We currently do not have any junior does at this point. </p>
             </div>
+            <div className={'filler'}/>
             <Footer/>
         </div>
     );

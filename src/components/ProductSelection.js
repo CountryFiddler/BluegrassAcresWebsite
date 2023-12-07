@@ -1,11 +1,6 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
-import cappuccinoPhoto from '../images/cappuccinophoto.jpeg';
-import sapphirePhoto from '../images/sapphirephoto.jpeg'
-import strawberryHomePhoto from '../images/strawberryhomephoto.jpeg'
+import {Link} from "react-router-dom";
 
-import Footer from "../components/footer";
 const ProductSelection = (images) => {
     return (
             <div className='productSection'>
